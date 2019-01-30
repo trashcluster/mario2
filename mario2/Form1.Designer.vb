@@ -22,10 +22,90 @@ Partial Class Form1
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.ButtonLeft = New System.Windows.Forms.Button()
+        Me.ButtonDown = New System.Windows.Forms.Button()
+        Me.ButtonRight = New System.Windows.Forms.Button()
+        Me.ButtonUp = New System.Windows.Forms.Button()
+        Me.ImageMario = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'ButtonLeft
+        '
+        Me.ButtonLeft.Location = New System.Drawing.Point(146, 389)
+        Me.ButtonLeft.Name = "ButtonLeft"
+        Me.ButtonLeft.Size = New System.Drawing.Size(30, 30)
+        Me.ButtonLeft.TabIndex = 0
+        Me.ButtonLeft.Text = "<"
+        Me.ButtonLeft.UseVisualStyleBackColor = True
+        '
+        'ButtonDown
+        '
+        Me.ButtonDown.Location = New System.Drawing.Point(182, 389)
+        Me.ButtonDown.Name = "ButtonDown"
+        Me.ButtonDown.Size = New System.Drawing.Size(30, 30)
+        Me.ButtonDown.TabIndex = 1
+        Me.ButtonDown.Text = "v"
+        Me.ButtonDown.UseVisualStyleBackColor = True
+        '
+        'ButtonRight
+        '
+        Me.ButtonRight.Location = New System.Drawing.Point(218, 389)
+        Me.ButtonRight.Name = "ButtonRight"
+        Me.ButtonRight.Size = New System.Drawing.Size(30, 30)
+        Me.ButtonRight.TabIndex = 2
+        Me.ButtonRight.Text = ">"
+        Me.ButtonRight.UseVisualStyleBackColor = True
+        '
+        'ButtonUp
+        '
+        Me.ButtonUp.Location = New System.Drawing.Point(182, 353)
+        Me.ButtonUp.Name = "ButtonUp"
+        Me.ButtonUp.Size = New System.Drawing.Size(30, 30)
+        Me.ButtonUp.TabIndex = 3
+        Me.ButtonUp.Text = "^"
+        Me.ButtonUp.UseVisualStyleBackColor = True
+        '
+        'ImageMario
+        '
+        Me.ImageMario.BackColor = System.Drawing.Color.Red
+        Me.ImageMario.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.ImageMario.Location = New System.Drawing.Point(182, 208)
+        Me.ImageMario.Name = "ImageMario"
+        Me.ImageMario.Size = New System.Drawing.Size(20, 20)
+        Me.ImageMario.TabIndex = 4
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(74, 431)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(252, 20)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Touches ZQSD pour bouger mario"
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(421, 450)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ImageMario)
+        Me.Controls.Add(Me.ButtonUp)
+        Me.Controls.Add(Me.ButtonRight)
+        Me.Controls.Add(Me.ButtonDown)
+        Me.Controls.Add(Me.ButtonLeft)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents ButtonLeft As Button
+    Friend WithEvents ButtonDown As Button
+    Friend WithEvents ButtonRight As Button
+    Friend WithEvents ButtonUp As Button
+    Friend WithEvents ImageMario As Panel
+    Friend WithEvents Label1 As Label
 End Class
