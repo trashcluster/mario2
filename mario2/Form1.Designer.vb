@@ -28,11 +28,13 @@ Partial Class Form1
         Me.ButtonUp = New System.Windows.Forms.Button()
         Me.ImageMario = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ButtonLeft
         '
-        Me.ButtonLeft.Location = New System.Drawing.Point(146, 389)
+        Me.ButtonLeft.Location = New System.Drawing.Point(44, 61)
         Me.ButtonLeft.Name = "ButtonLeft"
         Me.ButtonLeft.Size = New System.Drawing.Size(30, 30)
         Me.ButtonLeft.TabIndex = 0
@@ -41,7 +43,7 @@ Partial Class Form1
         '
         'ButtonDown
         '
-        Me.ButtonDown.Location = New System.Drawing.Point(182, 389)
+        Me.ButtonDown.Location = New System.Drawing.Point(80, 61)
         Me.ButtonDown.Name = "ButtonDown"
         Me.ButtonDown.Size = New System.Drawing.Size(30, 30)
         Me.ButtonDown.TabIndex = 1
@@ -50,7 +52,7 @@ Partial Class Form1
         '
         'ButtonRight
         '
-        Me.ButtonRight.Location = New System.Drawing.Point(218, 389)
+        Me.ButtonRight.Location = New System.Drawing.Point(116, 61)
         Me.ButtonRight.Name = "ButtonRight"
         Me.ButtonRight.Size = New System.Drawing.Size(30, 30)
         Me.ButtonRight.TabIndex = 2
@@ -59,7 +61,7 @@ Partial Class Form1
         '
         'ButtonUp
         '
-        Me.ButtonUp.Location = New System.Drawing.Point(182, 353)
+        Me.ButtonUp.Location = New System.Drawing.Point(80, 25)
         Me.ButtonUp.Name = "ButtonUp"
         Me.ButtonUp.Size = New System.Drawing.Size(30, 30)
         Me.ButtonUp.TabIndex = 3
@@ -84,19 +86,30 @@ Partial Class Form1
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Touches ZQSD pour bouger mario"
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.ButtonUp)
+        Me.GroupBox1.Controls.Add(Me.ButtonLeft)
+        Me.GroupBox1.Controls.Add(Me.ButtonDown)
+        Me.GroupBox1.Controls.Add(Me.ButtonRight)
+        Me.GroupBox1.Location = New System.Drawing.Point(109, 332)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 96)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Contrôles"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(421, 450)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ImageMario)
-        Me.Controls.Add(Me.ButtonUp)
-        Me.Controls.Add(Me.ButtonRight)
-        Me.Controls.Add(Me.ButtonDown)
-        Me.Controls.Add(Me.ButtonLeft)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -108,4 +121,5 @@ Partial Class Form1
     Friend WithEvents ButtonUp As Button
     Friend WithEvents ImageMario As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
